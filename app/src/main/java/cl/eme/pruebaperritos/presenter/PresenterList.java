@@ -3,6 +3,7 @@ package cl.eme.pruebaperritos.presenter;
 import java.util.List;
 
 import cl.eme.pruebaperritos.model.InterfaceModel;
+import cl.eme.pruebaperritos.ui.view.IPresenterViewList;
 
 public class PresenterList implements IPresenterList, IPresenterModel{
     InterfaceModel interfaceModel;

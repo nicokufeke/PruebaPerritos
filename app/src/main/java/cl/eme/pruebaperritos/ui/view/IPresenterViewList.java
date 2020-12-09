@@ -1,4 +1,4 @@
-package cl.eme.pruebaperritos.presenter;
+package cl.eme.pruebaperritos.ui.view;
 
 import java.util.List;
 
