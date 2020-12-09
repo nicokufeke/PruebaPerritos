@@ -41,5 +41,34 @@ android {
         testImplementation 'junit:junit:4.+'
         androidTestImplementation 'androidx.test.ext:junit:1.1.2'
         androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+        //Retrofit
+        def retro_version = "2.9.0"
+        def logging_version = "4.9.0"
+        implementation "com.squareup.retrofit2:retrofit:$retro_version"
+        implementation "com.squareup.retrofit2:converter-gson:$retro_version"
+        implementation "com.squareup.okhttp3:logging-interceptor:$logging_version"
+
+
+        //Truth
+        def truth_version = "1.0"
+        def truth_ext_version = "1.3.0"
+        testImplementation "com.google.truth:truth:$truth_version"
+        testImplementation "androidx.test.ext:truth:$truth_ext_version"
+        //Hamcrest
+        def ham_version = "2.2"
+        testImplementation "org.hamcrest:hamcrest:$ham_version"
+        testImplementation "org.hamcrest:hamcrest-library:$ham_version"
+
+        //Mockito
+        def mockito_version = "3.6.0"
+        testImplementation "org.mockito:mockito-core:$mockito_version"
+
+
     }
+
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }

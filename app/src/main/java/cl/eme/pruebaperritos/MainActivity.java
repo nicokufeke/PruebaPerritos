@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import cl.eme.pruebaperritos.databinding.ActivityMainBinding;
+import cl.eme.pruebaperritos.presenter.Presenter;
 
 /*
 Parte I: Modelo de la Aplicación.
@@ -35,6 +36,7 @@ Parte III: Guardar favoritos usando Firestore
 public class MainActivity extends AppCompatActivity {
 
 public ActivityMainBinding binding;
+private Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
